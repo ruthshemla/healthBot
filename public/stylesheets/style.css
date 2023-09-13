@@ -1,0 +1,54 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  display: flex;
+}
+.bgImage {
+  width: 100%;
+  height: auto;
+}
+.centerBgLogo {
+  position: absolute;
+  left: 22%;
+  z-index: 2;
+}
+.rectangle {
+  border-radius: 30px;
+  background: #f8faff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 99px;
+  left: 41px;
+  width: 94%;
+  height: 90%;
+  position: absolute;
+}
+#webchat {
+  padding: 30px;
+  width: 1100px;
+  height: inherit;
+}
+
+#webchat[watermark="true"] [role="complementary"] ul[role="list"]::after {
+  content: "Powered By ...";
+  bottom: 0;
+  right: 0;
+  display: block;
+  font-family: "Segoe Semibold", Calibri, "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  padding: 15px 10px 10px;
+  position: absolute;
+  position: sticky;
+  text-align: right;
+}
+
+#webchat[watermark="true"] .webchat__scrollToEndButton {
+  bottom: 32px;
+  left: 50%;
+  right: unset;
+  transform: translate(-50%, 0);
+}
